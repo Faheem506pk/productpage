@@ -4,370 +4,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-
-    <script type="module" src="swiper.js"></script>
+    <title>Product page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
-    <title>Product page</title>
 </head>
 
 <body>
+      <!-- header -->
+      <header class="d-flex fixed-top align-items-center justify-content-between px-4">
+
+        <div class="brand-nav">
+            <a href="/" class="brand">
+                <img src="assets/images/brand-logo.png" alt="logo" />
+            </a>
+        </div>
+        <div class="main-menu">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i class="bi bi-archive"></i></span> Wartehallen</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active"><span class="icon"><i class="bi bi-p-square"></i></span> Radparksysteme</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i class="bi bi-lock"></i></span> Zugangssysteme</a></li>
+            </ul>
+        </div>
+        <div class="main-menu full-main-menu">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i class="bi bi-journal-bookmark active"></i></span> Bookmarks</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i class="bi bi-search active"></i></span> Search</a></li>
+                <li class="nav-item"><a href="#offcanvasMenu" data-bs-toggle="offcanvas" class="nav-link"><span class="icon"><i class="bi bi-list active"></i></span> menu</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasMenuLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-archive"></i> Wartehallen</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-p-square"></i> Radparksysteme</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-lock"></i> Zugangssysteme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-box"></i> Other Products</a>
+                  </li>
+              </ul>
+        </div>
+      </div>
+
+    <!-- Product slider -->
+<section class="main-product-slider">
     <div class="container">
-
-        
-          
-           
-
-
-        
-        <header
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
-                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <img src="/images/logo/csm_logo_kienzler_pfade_d04b825787.png" alt=""
-                        style="height: auto; width: 120px;">
-
-                </a>
-            </div>
-
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary">Wartehallen</a></li>
-                <li><a href="#" class="nav-link px-2">Radparksysteme</a></li>
-                <li><a href="#" class="nav-link px-2">Zugangssysteme</a></li>
-                
-            </ul>
-
-            <div class="col-md-3 text-end">
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2">Merkliste</a></li>
-                <li><a href="#" class="nav-link px-2">Suche</a></li>
-            </ul>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-001.jpg" />
               </div>
-        </header>
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-002.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
+          </div>
     </div>
+</section>
 
-
+<!-- Product inquire -->
+<section class="product-inquire">
     <div class="container">
-        <!-- Swiper -->
-        <div class="swiper">
-            <swiper-container class="mySwiper" init="false">
-                <swiper-slide>
-                    <img src=" https://cdn.magloft.com/github/swiper/images/page-001.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-002.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
-                </swiper-slide>
-            </swiper-container>
-
-
-
+        <div class="row">
+            <div class="col-6">
+                <p>The following product images are examples and some show optional special equipment.
+Our products can be manufactured in all color and configuration options upon request.</p>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
         </div>
     </div>
-    
+</section>
 
-
+<!-- Product msg -->
+<section class="product-msg">
     <div class="container">
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        Accordion Item #1
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These
-                        classes control the overall appearance, as well as the showing and hiding via CSS
-                        transitions. You can modify any of this with custom CSS or overriding our default variables.
-                        It's also worth noting that just about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                        the collapse plugin adds the appropriate classes that we use to style each element. These
-                        classes control the overall appearance, as well as the showing and hiding via CSS
-                        transitions. You can modify any of this with custom CSS or overriding our default variables.
-                        It's also worth noting that just about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        Accordion Item #3
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These
-                        classes control the overall appearance, as well as the showing and hiding via CSS
-                        transitions. You can modify any of this with custom CSS or overriding our default variables.
-                        It's also worth noting that just about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapse4">
-                        Accordion Item #4
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These
-                        classes control the overall appearance, as well as the showing and hiding via CSS
-                        transitions. You can modify any of this with custom CSS or overriding our default variables.
-                        It's also worth noting that just about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapse5">
-                        Accordion Item #5
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These
-                        classes control the overall appearance, as well as the showing and hiding via CSS
-                        transitions. You can modify any of this with custom CSS or overriding our default variables.
-                        It's also worth noting that just about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
+        <div class="well">
+            <p>Add products and tender texts to your personal watch list.</p>
         </div>
     </div>
+</section>
 
+<section class="product-details">
     <div class="container">
-        <!-- Swiper -->
-        <div class="swiper">
-            <swiper-container class="mySwiper" init="false">
-                <swiper-slide>
-                    <img src=" https://cdn.magloft.com/github/swiper/images/page-001.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-002.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
-                </swiper-slide>
-            </swiper-container>
 
+        <nav class="navbar bg-body-tertiary px-3 mb-3 sticky-top">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspySection1">Description</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspySection2">Product Data Sheets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspySection3">Optional Accessories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspySection4">Fitting products</a>
+              </li>
+            </ul>
+          </nav>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <div class="section-detail"  id="scrollspySection1">
+                <div class="row">
+                    <div class="col-6">
+                        <h3>Description</h3>
+                        <p>The Bike and Ride Box bike parking system from Kienzler Stadtmobiliar offers maximum flexibility - a modular system that you can design yourself depending on the required bike park capacity and design requirements. The B2 Cargo bicycle box is especially suitable for cargo bikes. </p>
+                        <p>Access to the Bike and Ride Box B2 Cargo is regulated, depending on customer needs, using the different variants of our  KINUS access system  .</p>
+                        <p>If you choose an online booking system , you can conveniently book the Bike and Ride Box via our  collection portal  www.bikeandridebox.de  , where we already manage over 500 systems (also available as an app with  Android  or  iOS  operating systems). Or you can opt for a customized solution for your municipality/region and we will make your systems bookable via our own  booking portal  with  fully automated user management  .  In the corresponding product KINUS Individual you can take a look at some examples of our over 25 customer-specific booking platforms via direct link.</p>
+                    </div>
+                    <div class="col-6">
+                        <h3>Highlights</h3>
+                        <ul>
+                            <li>Flexible modular system for cargo bikes</li>
+                            <li>Safest bike parking system thanks to individual boxes</li>
+                            <li>Compatible with standard cargo bikes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="section-detail"  id="scrollspySection2">
+                <h3>Product Data Sheets</h3>
 
-
-        </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse4">
+                                Accordion Item #4
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse5">
+                                Accordion Item #5
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-detail"  id="scrollspySection3">
+                <h3>Optional Accessories</h3>
+                <div class="swiper productSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+            <div class="section-detail"  id="scrollspySection4">
+                <h3>Fitting products</h3>
+                <div class="swiper productSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+          </div>
     </div>
+</section>
+
+<section class="newsletter-section">
     <div class="container">
-        <!-- Swiper -->
-        <div class="swiper">
-            <swiper-container class="mySwiper" init="false">
-                <swiper-slide>
-                    <img src=" https://cdn.magloft.com/github/swiper/images/page-001.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-002.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
-                </swiper-slide>
-            </swiper-container>
-
-
-
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="text-content">
+                <h4><i class="bi bi-newspaper"></i> Jetzt zum vierteljährlichen Newsletter anmelden.</h4>
+            </div>
+            <div class="action-btn">
+                <a href="#" class="btn btn-link bg-white text-dark"><i class="bi bi-arrow-right"></i></a>
+            </div>
         </div>
     </div>
+</section>
 
-    <div class="container-fluid sec4-1 ">
-        <div class="container sec4">
-
-            <h1>Jetzt zum vierteljährlichen Newsletter anmelden.</h1>
-        </div>
-    </div>
-
-    <div class="container-fluid footer-1">
+    <footer class="footer">
         <div class="container">
-            <h1>Starten wir gemeinsam in eine mobile Zukunft? Sprechen Sie uns an!</h1>
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 justify-content-center">
-                <div class="col-6 mb-4">
-                    <h5>Section</h5>
+            <h6>Starten wir gemeinsam in eine mobile Zukunft? Sprechen Sie uns an!</h6>
+            <div class="row my-5">
+                <div class="col-4">
+                    <h5 class="nav-title">For joint projects:</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-telephone"></i> +49 (0)7831 788-0</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-envelope"></i> info(at)kienzler.com</a></li>
                     </ul>
                 </div>
 
-                <div class="col mb-4">
-                    <h5>Section</h5>
+                <div class="col-4">
+                    <h5 class="nav-title">For shared career goals:</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-chevron-right"></i> Our job advertisements</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-chevron-right"></i> personal(at)kienzler.com</a></li>
                     </ul>
                 </div>
 
-                <div class="col mb-4">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                        </li>
-                    </ul>
+                <div class="col-4">
+                    <div class="d-flex media-flex">
+                        <div class="media-img me-3">
+                            <img src="https://www.kienzler.com/typo3conf/ext/kienzler/Resources/Public/img/icon_siegel.png" alt="" />
+                        </div>
+                        <div class="media-content">
+                            <h5>Quality from the Black Forest</h5>
+                            <p>Our products are produced in the Kinzigtal in the Black Forest.</p>
+                        </div>
+                    </div>
+
                 </div>
-            </footer>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                    <ul class="nav mini-nav">
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">imprint</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">data protection</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                      </ul>
+                    <ul class="nav social-nav">
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-twitter-x"></i></a>
+                          </li>
+                      </ul>
+            </div>
         </div>
 
-    </div>
+    </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
 </body>
 
 </html>
