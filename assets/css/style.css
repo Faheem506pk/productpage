@@ -25,7 +25,14 @@ body{
         right: 0;
     }
 }
-
+.offcanvas-body .nav-link{
+  color: white;
+  border-bottom: 1px solid white;
+}
+.off-canvas-accordion{
+  background: none;
+  border: 2p solid red;
+}
 
 .sec4{
     color: white;
