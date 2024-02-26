@@ -37,6 +37,10 @@ body{
   margin: 3rem 0;
 }
 
+
+.product-msg-in .row .col-2 .p{
+  font-weight: bold;
+}
 /* product-inquire */
 
 .product-inquire{
