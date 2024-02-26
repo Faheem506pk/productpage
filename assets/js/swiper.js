@@ -16,13 +16,9 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-scrollbar",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+    nextEl: ".slider-next",
+    prevEl: ".slider-prev",
+  }
 });
 
 var swiper = new Swiper(".productSwiper", {
