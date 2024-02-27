@@ -111,7 +111,11 @@ a {
 .accordion-button-h{
   padding: 12px !important;
 }
-
+.accordion-button-off{
+  padding: 0px !important;
+  font-size: 16px !important;
+  padding-left: 16px !important;
+}
 .offcanvas-body .nav-link{
 color: white;
 border-bottom: 1px solid white;
