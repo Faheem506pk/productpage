@@ -79,19 +79,37 @@ a {
 .nav-link.active{
    
     border-left: 2px solid #fd0303;
-    color: black !important;
+    color: #3A4245 !important;
     background-color: #f7f7f7 !important;
     border-radius: 0%;
     font-size: 1rem ;
+    font-weight: bold;
 
 }
 .nav-link-in{
-  border-left: 1px solid #000000;
-  color: black !important;
+  border-left: 1px solid #3A4245;
+  color: #3A4245 !important;
   
 }
 .nav-link{
   border-radius: 0px !important;
+}
+
+.accordion-button-1{
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #3A4245 !important;
+  
+}
+
+.ProductDataSheets-1{
+  color: #3A4245 !important;
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+
+.accordion-button-h{
+  padding: 12px !important;
 }
 
 .offcanvas-body .nav-link{
@@ -101,7 +119,7 @@ margin: 5px 0px;
 }
 .accordion-button:hover{
   background-color: #ffffff !important;
-  color: black !important;
+  color: #3A4245 !important;
 }
 
 .accordion-button::after {
@@ -114,6 +132,7 @@ margin: 5px 0px;
 .drawings-wrapper {
   position: relative; /* Added position relative to the drawings wrapper */
 }
+
 
 .plusbtn {
   position: absolute;
@@ -130,7 +149,7 @@ margin: 5px 0px;
 
 .off-canvas-nav-item a:hover{
 background-color: white;
-color: black;
+color: #3A4245;
 }
 .sec4{
   color: white;
