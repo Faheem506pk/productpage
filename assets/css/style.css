@@ -403,3 +403,6 @@ h1+h2, h1+.h2, h1>.h2, .h1+h2, .h1+.h2, .h1>.h2 {
 .product-title>span {
   display: block;
 }
+.accordion-child-container{
+  width: 49%;
+}

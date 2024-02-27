@@ -1,10 +1,10 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  centeredSlides: false,
+  centeredSlides: true,
   slidesPerGroupSkip: 1,
   loop: true,
-          speed: 700,
-          autoplay: true,
+  speed: 600,
+  autoplay: true,
   grabCursor: true,
   keyboard: {
     enabled: true,
@@ -26,11 +26,11 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".productSwiper", {
   loop: true,
-          loopAddBlankSlides: true,
-          spaceBetween: 30,
-          slidesPerView: 1,
-          slidesPerGroup: 1,
-          speed: 700,
+  loopAddBlankSlides: true,
+  spaceBetween: 30,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  speed: 700,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
