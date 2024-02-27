@@ -83,13 +83,13 @@
                     <div class="accordion nav-link px-0" id="accordionExample">
                         <div class="accordion-item bg-transparent text-white border-0 px-0">
                             <h2 class="accordion-header  bg-transparent">
-                                <button class="accordion-button bg-transparent text-white px-3 py-2" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
+                                <button class="accordion-button collapsed bg-transparent text-white px-3 py-2"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
                                     Unternehmen
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
+                            <div id="collapseOne" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body bg-transparent">
                                     <strong>This is the first item's accordion body.</strong> It is shown by default,
@@ -164,33 +164,25 @@
             <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide cloudimage-360" 
-                    
-                        data-index-zero-base="4"
-                        data-amount="12"
-                        data-spin-reverse="false"
-                        data-color="6"
-                        data-autoplay
-                        data-autoplay-reverse
-                        data-play-once
+                    <div class="swiper-slide cloudimage-360" data-index-zero-base="4" data-amount="12"
+                        data-spin-reverse="false" data-color="6" data-autoplay data-autoplay-reverse data-play-once
                         data-speed="50"
-                    data-folder="https://www.kienzler.com/fileadmin/user_upload/gliederung_homepage/produkte/radparksysteme/bike_and_ride_box/cargo_box/drehteller/"  
-                    data-filename="image_{index}.jpg"
-                    ></div>
+                        data-folder="https://www.kienzler.com/fileadmin/user_upload/gliederung_homepage/produkte/radparksysteme/bike_and_ride_box/cargo_box/drehteller/"
+                        data-filename="image_{index}.jpg"></div>
                     <div class="swiper-slide">
                         <img src="https://www.kienzler.com/fileadmin/_processed_/0/d/csm_image_0001_128a31a458.webp" />
                     </div>
                     <div class="swiper-slide">
                         <img src="https://www.kienzler.com/fileadmin/_processed_/0/d/csm_image_0001_128a31a458.webp" />
                     </div>
-                    
+
                 </div>
                 <div class="slider-nav">
                     <div class="slider-next"><i class="bi bi-chevron-left"></i></div>
                     <div class="slider-prev"><i class="bi bi-chevron-right"></i></div>
                     <div class="swiper-scrollbar"></div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -203,8 +195,8 @@
                     <p>The following product images are examples and some show optional special equipment.
                         Our products can be manufactured in all color and configuration options upon request.</p>
                 </div>
-                <div class="col-6 d-flex justify-content-end " >
-                    <button type="button" class="btn btn-primary "style="width: 200px; height: 50px;" >Primary</button>
+                <div class="col-6 d-flex justify-content-end ">
+                    <button type="button" class="btn btn-primary " style="width: 200px; height: 50px;">Primary</button>
                 </div>
             </div>
         </div>
@@ -216,16 +208,17 @@
             <div class="product-msg-in">
                 <div class="row ">
                     <div class="col-2 ">
-                        
-                            <p style="font-weight:700;"> 
-                                <i class="bi bi-list-task"></i> Your watchlist:
-                            </p>
-                            
+
+                        <p style="font-weight:700;">
+                            <i class="bi bi-list-task"></i> Your watchlist:
+                        </p>
+
                     </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-transparent"> <i class="bi bi-plus-circle-fill me-2"></i>Add product data sheet</button>
-                        </div>
-                    
+                    <div class="col">
+                        <button type="button" class="btn btn-transparent"> <i
+                                class="bi bi-plus-circle-fill me-2"></i>Add product data sheet</button>
+                    </div>
+
                 </div>
                 <div class="row">
                     <div class="col"> <!-- This div creates a column for the content -->
@@ -237,7 +230,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <section class="product-details">
         <div class="container">
@@ -293,16 +286,16 @@
                     <h3>Product Data Sheets</h3>
 
                     <div class="accordion" id="accordionPanelsStayOpenExample">
-                        
+
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#product-collapseOne" aria-expanded="true"
+                                    aria-controls="product-collapseOne">
                                     Technische Daten
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div id="product-collapseOne" class="accordion-collapse collapse ">
                                 <div class="accordion-body">
                                     <div class=" card bg-light border-0 p-3 mb-4">
                                         <h3>Tragende Konstruktion
@@ -397,8 +390,26 @@
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                                <div class="accordion-body">
-                                    <img src="./assets/images/brand-logo.png" class="img-fluid" alt="...">
+                                <div class="card-body">
+                                    <div class="row">
+
+                                        <div class="drawings-wrapper col-md-6">
+                                            <figure>
+
+                                                <a href="/assets/images/produktdaten.jpg" data-fancybox="drawings">
+                                                    <img class="img-fluid"
+                                                        alt="Technische Zeichnung Bike and Ride Box Cargo einstöckig"
+                                                        src="/assets/images/produktdaten.jpg" width="725"
+                                                        height="513" />
+                                                    <button class="btn btn-primary rounded-circle resize" type="button">
+                                                        <i class="bi bi-plus-circle-fill me-2"></i>
+                                                    </button>
+                                                </a>
+
+                                            </figure>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -465,49 +476,55 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
@@ -521,33 +538,37 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp" class="card-img-top" alt="...">
+                                    <img src="https://www.kienzler.com/fileadmin/_processed_/4/3/csm_dachbegruenung_1_c0511aebf2.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Dachbegrünung Wartehallen</h5>
+                                        <h5 class="card-title">Dachbegrünung Wartehallen</h5>
                                     </div>
                                 </div>
                             </div>
@@ -647,7 +668,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
 
-    <script src="https://scaleflex.cloudimg.io/v7/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js?func=proxy"></script>
+    <script
+        src="https://scaleflex.cloudimg.io/v7/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js?func=proxy"></script>
 
     <script>
         window.CI360.update('gurkha-suv');
