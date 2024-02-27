@@ -11,8 +11,8 @@ var swiper = new Swiper(".mySwiper", {
   },
   breakpoints: {
     769: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
     },
   },
   scrollbar: {
