@@ -437,3 +437,8 @@ label.error {
   font-size: 14px;
   font-weight: normal;
 }
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
