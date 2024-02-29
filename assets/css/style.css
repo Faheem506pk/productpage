@@ -429,3 +429,11 @@ h1+h2, h1+.h2, h1>.h2, .h1+h2, .h1+.h2, .h1>.h2 {
 .accordion-child-container{
   width: 49%;
 }
+.error-message {
+  color: red !important;
+}
+label.error {
+  color: red;
+  font-size: 14px;
+  font-weight: normal;
+}
