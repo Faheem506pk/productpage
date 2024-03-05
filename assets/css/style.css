@@ -174,7 +174,7 @@ color: #3A4245;
 
 
 
-.swiper-slide {
+.swiper-slide  {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -185,7 +185,9 @@ position: relative;
 .swiper-slide img {
 display: block;
 width: 100%;
+margin: auto;
 box-shadow: none !important;
+width: 700px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -330,7 +332,7 @@ top: 109px;
 }
 
 .accordion .accordion-item .accordion-header .accordion-button::after{
-  background-color: #CD2B23;
+  /* background-color: #CD2B23; */
   height: 32px;
   width: 32px;
   border-radius: 50%;background-position: center center;
@@ -441,4 +443,10 @@ label.error {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.accordion-button::after {
+  background-image: url("../images/plus-sign.png") !important; 
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/Minus-Sign.png") !important; 
 }
