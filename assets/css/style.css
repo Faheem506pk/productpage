@@ -486,12 +486,23 @@ label.error {
 .Carousel-responsive{
   margin: auto;
 }
+
 @media (min-width: 1100px) {
   .Carousel-responsive{
     margin: auto;
     display: none;
   }
-  
+
+  }
+@media (min-width: 1400px) {
+  .responsive-scrollspy{
+    display: none;
+  }
+  }
+@media (max-width: 600px) {
+  .responsive-scrollspy{
+    flex-direction: column;
+  }  
   }
 @media (max-width: 1100px) {
   .Carousel-Desktop{
