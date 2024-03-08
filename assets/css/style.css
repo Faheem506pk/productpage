@@ -450,3 +450,14 @@ label.error {
 .accordion-button:not(.collapsed)::after {
   background-image: url("../images/Minus-Sign.png") !important; 
 }
+
+/***** Responsive Navbar *****/ 
+@media (max-width: 1100px) {
+.Responsive-li{
+  display: none;
+}
+
+}
+
+
+/***** End Responsive Navbar *****/
