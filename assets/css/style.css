@@ -483,6 +483,22 @@ label.error {
 .carousel-control-next{
   transform: translateX(70px);
 }
+.Carousel-responsive{
+  margin: auto;
+}
+@media (min-width: 1100px) {
+  .Carousel-responsive{
+    margin: auto;
+    display: none;
+  }
+  
+  }
+@media (max-width: 1100px) {
+  .Carousel-Desktop{
+  display: none;
+  }
+  
+  }
 
 
 
