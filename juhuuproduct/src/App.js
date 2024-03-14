@@ -2,7 +2,10 @@ import Product from './components/product';
 import Header from './components/header';
 import Product_overview_page from './components/product_overview_page';
 import { Routes, Route } from 'react-router-dom';
+import ContactForm from './components/ContactForm';
+import Footer from './components/footer';
 
+import './assets/css/style.css';
 
 
 function App() {
@@ -16,7 +19,8 @@ function App() {
 
 
     </Routes>
-
+    
+    <Footer/>
 
     
     
