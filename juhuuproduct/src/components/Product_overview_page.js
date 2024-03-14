@@ -1,706 +1,765 @@
 import { Link, NavLink } from "react-router-dom";
+
+
+
 export default function Product_overview_page(){
     return(
 <>
-<>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="JUHUU" />
-  <meta
-    name="description"
-    content="We are a company that was founded with the aim of creating a digital IoT app ecosystem without barriers. We all unite the common passion to create something new and to provide our customers an optimal system for their products."
-  />
-  <meta name="keywords" content="juhuu, iot, bikebox" />
-  <meta name="robots" content="index, follow" />
-  <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="language" content="German" />
-  {/* Add these links in your <head> section */}
-  {/* juhuu icon */}
-  <link rel="stylesheet" href="assets/css/index.css" />
-  <link rel="icon" href="assets/images/juhuu_logo.png" type="image/x-icon" />
-  <title>Product Overview page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    className="bootstrap-5"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-  />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  {/* Font Awesome */}
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  />
-  {/* Font Awesome */}
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-  />
-  
-  <div
-    className="offcanvas offcanvas-end"
-    tabIndex={-1}
-    id="offcanvasMenu"
-    aria-labelledby="offcanvasMenuLabel"
-  >
-    <div className="offcanvas-header bg-dark">
-      <div className="input-group">
-        <input
-          type="search"
-          className="form-control  border-0"
-          placeholder="Search"
-          aria-label="Search"
-          aria-describedby="search-addon"
-        />
-        <span className="input-group-text" id="search-addon">
-          <i className="bi bi-search" />
-        </span>
-      </div>
-      <i
-        className="bi bi-x-lg ms-3"
-        type="button"
-        style={{ color: "white" }}
-        data-bs-dismiss="offcanvas"
-        aria-label="Close"
-      />
-    </div>
-    <div className="offcanvas-body bg-dark">
-      <ul className="nav flex-column">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">
-            <i className="bi bi-archive" />
-            Wartehallen
-          </a>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <a className="nav-link" href="#">
-            <i className="bi bi-p-square me-3" /> Radparksysteme
-          </a>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <a className="nav-link" href="#">
-            <i className="bi bi-lock me-3" /> Zugangssysteme
-          </a>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <a className="nav-link" href="#">
-            <i className="bi bi-box me-3" /> Other Products
-          </a>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <a className="nav-link" href="#">
-            {" "}
-            Aktuelles
-          </a>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <div className="accordion nav-link px-0" id="accordionExample">
-            <div className="accordion-item bg-transparent text-white border-0 px-0">
-              <h2 className="accordion-header  bg-transparent">
-                <button
-                  className="accordion-button collapsed bg-transparent text-white px-3 py-2 accordion-button-off off-canvas-accordion"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Unternehmen
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body bg-transparent">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <a href="#" className="nav-link">
-            Karriere
-          </a>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <div className="accordion  nav-link px-0" id="accordionExample">
-            <div className="accordion-item bg-transparent text-white border-0 px-0">
-              <h2 className="accordion-header bg-transparent">
-                <button
-                  className="accordion-button collapsed bg-transparent text-white px-3 py-2 accordion-button-off off-canvas-accordion"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Service und Leistungen
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <a className="nav-link" href="#">
-            {" "}
-            DB Bike+Ride-Offensive
-          </a>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <a className="nav-link" href="#">
-            {" "}
-            Referenzprojekte
-          </a>
-        </li>
-        <li className="nav-item off-canvas-nav-item">
-          <a className="nav-link" href="#">
-            {" "}
-            Kontakt
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <section className="product-details">
+
+  <section className="main-product-slider">
     <div className="container">
-    <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
           <Link to="/">
-              <span>Kienzler</span>
+              <span>Juhuu</span>
+              </Link>
+          </li>
+          <li className="breadcrumb-item">
+          <Link to="/">
+            
+              <span>Fahrradparksysteme</span>
+            
             </Link>
           </li>
           <li className="breadcrumb-item active">
-            <span>Radparksysteme</span>
+            <span>Bike and Ride Box B2 Cargo Einstöckig</span>
           </li>
         </ol>
       </nav>
-      <div className="Beschreibung my-5">
-        <h1>Beschreibung</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint rem
-          deleniti nostrum, perspiciatis aspernatur eos! Deserunt veniam fugiat
-          odio error similique nihil, nisi dicta soluta, voluptatum quaerat
-          tempore laudantium. Dolorem asperiores officiis nemo excepturi
-          pariatur omnis, inventore cum, exercitationem ex similique corporis.
-          Sapiente, provident quaerat culpa ducimus quod ipsam rem veritatis eum
-          illum ipsum consectetur corrupti cum, iure officia?
-        </p>
-        Dolorem asperiores officiis nemo excepturi pariatur omnis, inventore
-        cum, exercitationem ex similique corporis. Sapiente, provident quaerat
-        culpa ducimus quod ipsam rem veritatis eum illum ipsum consectetur
-        corrupti cum, iure officia?
-        <p />
-      </div>
-      <div className="row d-flex my-5">
-        <h1>Beschreibung</h1>
-        <div className="col mt-3">
-          <div className="btn border border-5 px-5 mx-2">Digital</div>
-          <div className="btn border border-5 px-5 mx-2">Analog</div>
-          <div className="btn border border-5 px-5 mx-2">Ausstattung</div>
+      <h1 className="h2 product-title">
+        <span>Bike and Ride Box</span>{" "}
+        <span className="h2">B2 Cargo Einstöckig</span>
+      </h1>
+      <div className="swiper mySwiper">
+        <div className="swiper-wrapper">
+          <div
+            className="swiper-slide cloudimage-360"
+            data-index-zero-base={4}
+            data-amount={12}
+            data-spin-reverse="false"
+            data-color={6}
+            data-autoplay=""
+            data-autoplay-reverse=""
+            data-play-once=""
+            data-speed={50}
+            data-folder="https://www.kienzler.com/fileadmin/user_upload/gliederung_homepage/produkte/radparksysteme/bike_and_ride_box/cargo_box/drehteller/"
+            data-filename="image_{index}.jpg"
+          />
+          <div className="swiper-slide">
+            <img src="https://www.kienzler.com/fileadmin/_processed_/0/d/csm_image_0001_128a31a458.webp" />
+          </div>
+          <div className="swiper-slide">
+            <img src="https://www.kienzler.com/fileadmin/_processed_/0/d/csm_image_0001_128a31a458.webp" />
+          </div>
+        </div>
+        <div className="slider-nav">
+          <div className="slider-next">
+            <i className="bi bi-chevron-left" />
+          </div>
+          <div className="slider-prev">
+            <i className="bi bi-chevron-right" />
+          </div>
+          <div className="swiper-scrollbar" />
         </div>
       </div>
-      <div className="Digital my-5">
-        <h1>Digital</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint rem
-          deleniti nostrum, perspiciatis aspernatur eos! Deserunt veniam fugiat
-          odio error similique nihil, nisi dicta soluta, voluptatum quaerat
-          tempore laudantium. Dolorem asperiores officiis nemo excepturi
-          pariatur omnis, inventore cum, exercitationem ex similique corporis.
-          Sapiente, provident quaerat culpa ducimus quod ipsam rem veritatis eum
-          illum ipsum consectetur corrupti cum, iure officia? Dolorem asperiores
-          officiis nemo excepturi pariatur omnis, inventore cum, exercitationem
-          ex similique corporis. Sapiente, provident quaerat culpa ducimus quod
-          ipsam rem veritatis eum illum ipsum consectetur corrupti cum, iure
-          officia?
-        </p>
-        <div id="carouselExampleIndicators" className="carousel slide mt-5">
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={0}
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            />
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={1}
-              aria-label="Slide 2"
-            />
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={2}
-              aria-label="Slide 3"
-            />
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className="row carousel-product">
-                <div className="card col mx-2">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <ul>
-                      <li>
-                        Flexible Module System for furrhader &amp; E-bikes
-                      </li>
-                      <li>sichersters Radparksystem durch Einzelboxen</li>
-                      <li>Empfohlene ADFC-Qualitat nach DIN</li>
-                    </ul>
-                    <button className="btn container-fluid bg-dark mt-2 text-white ">
-                      Buy this Product
-                    </button>
-                  </div>
-                </div>
-                <div className="card col mx-2">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <ul>
-                      <li>
-                        Flexible Module System for furrhader &amp; E-bikes
-                      </li>
-                      <li>sichersters Radparksystem durch Einzelboxen</li>
-                      <li>Empfohlene ADFC-Qualitat nach DIN</li>
-                    </ul>
-                    <button className="btn container-fluid bg-dark mt-2 text-white ">
-                      Buy this Product
-                    </button>
-                  </div>
-                </div>
-                <div className="card col mx-2">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <ul>
-                      <li>
-                        Flexible Module System for furrhader &amp; E-bikes
-                      </li>
-                      <li>sichersters Radparksystem durch Einzelboxen</li>
-                      <li>Empfohlene ADFC-Qualitat nach DIN</li>
-                    </ul>
-                    <button className="btn container-fluid bg-dark mt-2 text-white ">
-                      Buy this Product
-                    </button>
-                  </div>
-                </div>
-              </div>
+    </div>
+  </section>
+  <section className="product-details">
+    <div className="container">
+      <nav className="sticky-top d-none d-xxl-block bg-white">
+        <ul className="nav nav-pills nav-fill nav-sideline product-nav ">
+          <li className="nav-item ">
+            <a className="nav-link nav-link-in" href="#Description">
+              Description
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link nav-link-in" href="#ProductDataSheets">
+              Product Data Sheets
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link nav-link-in" href="#OptionalAccessories">
+              Optional Accessories
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true"
+        className="scrollspy-example p-3 rounded-2"
+        tabIndex={0}
+      >
+        <div className="section-detail" id="Description">
+          <div className="row">
+            <div className="col-6">
+              <h3>Description</h3>
+              <p>
+                The Bike and Ride Box bike parking system from Kienzler
+                Stadtmobiliar offers maximum flexibility - a modular system that
+                you can design yourself depending on the required bike park
+                capacity and design requirements. The B2 Cargo bicycle box is
+                especially suitable for cargo bikes.{" "}
+              </p>
+              <p>
+                Access to the Bike and Ride Box B2 Cargo is regulated, depending
+                on customer needs, using the different variants of our KINUS
+                access system .
+              </p>
+              <p>
+                If you choose an online booking system , you can conveniently
+                book the Bike and Ride Box via our collection portal
+                www.bikeandridebox.de , where we already manage over 500 systems
+                (also available as an app with Android or iOS operating
+                systems). Or you can opt for a customized solution for your
+                municipality/region and we will make your systems bookable via
+                our own booking portal with fully automated user management . In
+                the corresponding product KINUS Individual you can take a look
+                at some examples of our over 25 customer-specific booking
+                platforms via direct link.
+              </p>
             </div>
-            <div className="carousel-item">
-              <div className="row carousel-product">
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="row carousel-product">
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="col-6">
+              <h3>Highlights</h3>
+              <ul>
+                <li>Flexible modular system for cargo bikes</li>
+                <li>Safest bike parking system thanks to individual boxes</li>
+                <li>Compatible with standard cargo bikes</li>
+              </ul>
             </div>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span
-              className="bi bi-arrow-left-circle-fill text-black fs-1 rounded-5"
-              aria-hidden="true"
-            />
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span
-              className="bi bi-arrow-right-circle-fill text-black fs-1 rounded-5"
-              aria-hidden="true"
-            />
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
-      <div className="Analogu pt-5 my-5">
-        <h1>Analogue</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint rem
-          deleniti nostrum, perspiciatis aspernatur eos! Deserunt veniam fugiat
-          odio error similique nihil, nisi dicta soluta, voluptatum quaerat
-          tempore laudantium. Dolorem asperiores officiis nemo excepturi
-          pariatur omnis, inventore cum, exercitationem ex similique corporis.
-          Sapiente, provident quaerat culpa ducimus quod ipsam rem veritatis eum
-          illum ipsum consectetur corrupti cum, iure officia? Dolorem asperiores
-          officiis nemo excepturi pariatur omnis, inventore cum, exercitationem
-          ex similique corporis. Sapiente, provident quaerat culpa ducimus quod
-          ipsam rem veritatis eum illum ipsum consectetur corrupti cum, iure
-          officia?
-        </p>
-        <div id="carouselExampleIndicators" className="carousel slide mt-5">
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={0}
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            />
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={1}
-              aria-label="Slide 2"
-            />
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={2}
-              aria-label="Slide 3"
-            />
+        <div className="section-detail mt-5 " id="ProductDataSheets">
+          <h3 className="ProductDataSheets-1">Produkt Informationen</h3>
+          <div className="accordion" id="accordionPanelsStayOpenExample">
+            <div className="accordion-item" style={{ borderTop: "none" }}>
+              <h2 className="accordion-header accordion-button-h">
+                <button
+                  className="accordion-button collapsed accordion-button-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#product-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="product-collapseOne"
+                >
+                  Technische Daten
+                </button>
+              </h2>
+              <div
+                id="product-collapseOne"
+                className="accordion-collapse collapse "
+              >
+                <div className="accordion-body">
+                  <div className=" card bg-light border-0 p-3 mb-4">
+                    <h3>Tragende Konstruktion</h3>
+                    <ul>
+                      <li>
+                        Tragender geschweißter Türrahmen und Korpusausbildung
+                        über Blechbiegeteile
+                      </li>
+                      <li>Verzinkt</li>
+                      <li>In ausgewählten RAL-Tönen pulverbeschichtet</li>
+                      <li>Modulare Erweiterungsmöglichkeiten</li>
+                    </ul>
+                  </div>
+                  <div className="row p-3 justify-content-between">
+                    <div className="card bg-light border-0 p-4 mb-4 accordion-child-container">
+                      <h5>Dach</h5>
+                      <h6 className="fw-bold mt-1">Dachaufbau</h6>
+                      <ul>
+                        <li>Pultdach aus Stahlblechen</li>
+                        <li>
+                          Verzinkt und in ausgewählten RAL-Tönen
+                          pulverbeschichtet
+                        </li>
+                      </ul>
+                      <h6 className="fw-bold">Dachentwässerung</h6>
+                      <ul>
+                        <li>
+                          Entwässerung über geneigtes Pultdach, über Rückwand
+                          oberirdisch abgeleitet
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="card bg-light border-0 p-4 mb-4 ms-auto accordion-child-container">
+                      <h5>Wände</h5>
+                      <h6 className="fw-bold mt-1">Seitenwände</h6>
+                      <ul>
+                        <li>Stahlblech</li>
+                        <li>Verzinkt</li>
+                        <li>In ausgewählten RAL-Tönen pulverbeschichtet</li>
+                        <li>
+                          Seitenwände mit blickdichter Belüftungsöffnung
+                          versehen
+                        </li>
+                      </ul>
+                      <h6 className="fw-bold">Tür</h6>
+                      <ul>
+                        <li>
+                          Öffnung und offen halten der Tür über Gasdruckfeder
+                        </li>
+                        <li>
+                          Tür mit nicht sichtbaren Scharnieren und nicht
+                          sichtbarer Position des Schlosses
+                        </li>
+                        <li>Türnummer möglich</li>
+                        <li>Türgriff als durchführende Griffleiste</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="row p-3 justify-content-between">
+                    <div className="col-6 card bg-light border-0 p-4 mb-4 accordion-child-container">
+                      <h5>Abmessungen</h5>
+                      <h6 className="fw-bold mt-1">Länge</h6>
+                      <ul>
+                        <li>1140 mm</li>
+                        <li>Grundmodul</li>
+                      </ul>
+                      <h6 className="fw-bold">Tiefe</h6>
+                      <ul>
+                        <li>2800 mm</li>
+                        <li>Grundmodul</li>
+                      </ul>
+                      <h6 className="fw-bold">Höhe</h6>
+                      <ul>
+                        <li>1575 mm</li>
+                        <li>Grundmodul</li>
+                      </ul>
+                      <h6 className="fw-bold">Fahrradeinstellmaß</h6>
+                      <ul>
+                        <li>1005 x 1350 x 2795mm</li>
+                      </ul>
+                    </div>
+                    <div className="col-5 card bg-light border-0 p-4 mb-4 ms-auto accordion-child-container">
+                      <h5>Fundamente</h5>
+                      <h6 className="fw-bold mt-1">Fundamente / Befestigung</h6>
+                      <ul>
+                        <li>
+                          Tragfähiger, ebener Untergrund (z.B. Pflasterbelag,
+                          Asphalt, Betonplatte…)
+                        </li>
+                      </ul>
+                      <h6 className="fw-bold">Schneelast / Windlast</h6>
+                      <ul>
+                        <li>Schneelast 0,85 kN/m²</li>
+                        <li>Windlast Zone 2</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header accordion-button-h">
+                <button
+                  className="accordion-button collapsed accordion-button-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Technische Zeichnung
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                className="accordion-collapse collapse"
+              >
+                <div id="collapseDrawings">
+                  <div className="card-body">
+                    <div className="row">
+                      <div className="drawings-wrapper col-md-6">
+                        <figure>
+                          <a
+                            href="/assets/images/produktdaten.jpg"
+                            data-fancybox="drawings"
+                          >
+                            <img
+                              className="img-fluid"
+                              alt="Technische Zeichnung Bike and Ride Box Cargo einstöckig"
+                              src="/assets/images/produktdaten.jpg"
+                              width={725}
+                              height={513}
+                            />
+                            <div className="plusbtn">
+                              <button
+                                className="btn btn-primary rounded-circle resize"
+                                type="button"
+                              >
+                                <i className="bi bi-plus fa-lg" />
+                              </button>
+                            </div>
+                          </a>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header accordion-button-h">
+                <button
+                  className="accordion-button collapsed accordion-button-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Ausstattung
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                className="accordion-collapse collapse"
+              >
+                <div className="accordion-body">
+                  <ul>
+                    <li>Fahrradparker</li>
+                    <li>Kleiderhaken</li>
+                    <li>Diebstahlsicherung</li>
+                    <li>Elektronisches Zugangssystem KINUS</li>
+                    <li>Elektronisches Türschloss</li>
+                    <li>Stromübergabe</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header accordion-button-h">
+                <button
+                  className="accordion-button collapsed accordion-button-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse4"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse4"
+                >
+                  Optionale Ausstattung
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse4"
+                className="accordion-collapse collapse"
+              >
+                <div className="accordion-body">
+                  <ul>
+                    <li>Fahrrad-Reparaturstation</li>
+                    <li>Ladesteckdose</li>
+                    <li>Dachbegrünung</li>
+                    <li>Mechanisches Türschloss</li>
+                    <li>Photovoltaik-Anlage</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header accordion-button-h">
+                <button
+                  className="accordion-button collapsed accordion-button-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse5"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse5"
+                >
+                  Produktunterlagen zum Download
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse5"
+                className="accordion-collapse collapse"
+              >
+                <div className="accordion-body" style={{ fontSize: 20 }}>
+                  <i
+                    className="bi bi-download"
+                    style={{ color: "#CD2B23", marginRight: 5 }}
+                  />
+                  <a
+                    className="download-link"
+                    target="_blank"
+                    href="/fahrradparksysteme?tx_kienzlercart_kienzlercart%5Baction%5D=show&tx_kienzlercart_kienzlercart%5Bcontroller%5D=GeneratePdf&tx_kienzlercart_kienzlercart%5Bproduct%5D=20&tx_kienzlercart_kienzlercart%5Btype%5D=product&type=1954&cHash=c1e7f04396e1fad4f2aaaf7e284ac1bb"
+                  >
+                    Produktdatenblatt herunterladen
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className="row carousel-product">
-                <div className="card col mx-2">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <ul>
-                      <li>
-                        Flexible Module System for furrhader &amp; E-bikes
-                      </li>
-                      <li>sichersters Radparksystem durch Einzelboxen</li>
-                      <li>Empfohlene ADFC-Qualitat nach DIN</li>
-                    </ul>
-                    <button className="btn container-fluid bg-dark mt-2 text-white ">
-                      Buy this Product
-                    </button>
+        </div>
+        <div className="OptionalAccessories pt-5 mt-5" id="OptionalAccessories">
+          <h1>Optional Accessories</h1>
+          <div
+            id="carouselExampleIndicators2"
+            className="carousel slide mt-5 Carousel-Desktop"
+          >
+            <div className="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide-to={0}
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              />
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to={1}
+                aria-label="Slide 2"
+              />
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide-to={2}
+                aria-label="Slide 3"
+              />
+            </div>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <div className="row carousel-product">
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <div className="card col mx-2">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <ul>
-                      <li>
-                        Flexible Module System for furrhader &amp; E-bikes
-                      </li>
-                      <li>sichersters Radparksystem durch Einzelboxen</li>
-                      <li>Empfohlene ADFC-Qualitat nach DIN</li>
-                    </ul>
-                    <button className="btn container-fluid bg-dark mt-2 text-white ">
-                      Buy this Product
-                    </button>
+              </div>
+              <div className="carousel-item">
+                <div className="row carousel-product">
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <div className="card col mx-2">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <ul>
-                      <li>
-                        Flexible Module System for furrhader &amp; E-bikes
-                      </li>
-                      <li>sichersters Radparksystem durch Einzelboxen</li>
-                      <li>Empfohlene ADFC-Qualitat nach DIN</li>
-                    </ul>
-                    <button className="btn container-fluid bg-dark mt-2 text-white ">
-                      Buy this Product
-                    </button>
+              </div>
+              <div className="carousel-item">
+                <div className="row carousel-product">
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                  <div className="card col mx-2">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
-              <div className="row carousel-product">
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="row carousel-product">
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-                <div className="card col mx-3">
-                  <img
-                    src="./assets/images/Bike-Container.webp"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h4>Bike and Ride box</h4>
-                    <h4>B1 Cubes Einstockig</h4>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide="prev"
+            >
+              <span
+                className="bi bi-arrow-left-circle-fill text-black fs-1 rounded-5"
+                aria-hidden="true"
+              />
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide="next"
+            >
+              <span
+                className="bi bi-arrow-right-circle-fill text-black fs-1 rounded-5"
+                aria-hidden="true"
+              />
+              <span className="visually-hidden">Next</span>
+            </button>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
+        </div>
+        <div
+          className="OptionalAccessories-Responsive d-flex flex-column"
+          id="OptionalAccessories"
+        >
+          <div
+            id="carouselExampleIndicators3"
+            className="carousel px-0 slide mt-5 col-6 Carousel-responsive"
           >
-            <span
-              className="bi bi-arrow-left-circle-fill text-black fs-1 rounded-5"
-              aria-hidden="true"
-            />
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span
-              className="bi bi-arrow-right-circle-fill text-black fs-1 rounded-5"
-              aria-hidden="true"
-            />
-            <span className="visually-hidden">Next</span>
-          </button>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <div className="row carousel-product  px-0">
+                  <div className="mx-0">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body  px-0">
+                      <h5>Bike and Ride box</h5>
+                      <h5>B1 Cubes Einstockig</h5>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="row carousel-product  px-0">
+                  <div className="mx-0">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body  px-0">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="row carousel-product  px-0">
+                  <div className="mx-0">
+                    <img
+                      src="./assets/images/Bike-Container.webp"
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body px-0">
+                      <h4>Bike and Ride box</h4>
+                      <h4>B1 Cubes Einstockig</h4>
+                      <ul>
+                        <li>
+                          Flexible Module System for furrhader &amp; E-bikes
+                        </li>
+                        <li>sichersters Radparksystem durch Einzelboxen</li>
+                        <li>Empfohlene ADFC-Qualitat nach DIN</li>
+                      </ul>
+                      <button className="btn container-fluid bg-dark mt-2 text-white ">
+                        Buy this Product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators3"
+              data-bs-slide="prev"
+            >
+              <span
+                className="bi bi-arrow-left-circle-fill text-black fs-1 rounded-5"
+                aria-hidden="true"
+              />
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators3"
+              data-bs-slide="next"
+            >
+              <span
+                className="bi bi-arrow-right-circle-fill text-black fs-1 rounded-5"
+                aria-hidden="true"
+              />
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -729,16 +788,13 @@ export default function Product_overview_page(){
                         className="fa fa-envelope fa-3x"
                         style={{ marginBottom: 10 }}
                       />
+                      <p> office@juhuu.app</p>
                     </a>
                   </div>
                   <a
                     href="mailto:office@juhuu.app"
                     style={{ textDecoration: "none", color: "black" }}
-                  >
-                    <div className="text">
-                      <p> office@juhuu.app</p>
-                    </div>
-                  </a>
+                  ></a>
                 </div>
               </div>
               <div className="col-md-3">
@@ -752,17 +808,6 @@ export default function Product_overview_page(){
                         className="fa fa-phone fa-3x"
                         style={{ marginBottom: 10 }}
                       />
-                    </a>
-                  </div>
-                  <a
-                    href="tel:+436609919009"
-                    style={{ textDecoration: "none", color: "black" }}
-                  ></a>
-                  <div className="text">
-                    <a
-                      href="tel:+436609919009"
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
                       <p> +43&nbsp;660&nbsp;9919&nbsp;009 </p>
                     </a>
                   </div>
@@ -781,16 +826,6 @@ export default function Product_overview_page(){
                         style={{ marginBottom: 10 }}
                       />
                     </a>
-                  </div>
-                  <a
-                    href="https://www.linkedin.com/company/juhuu/?originalSubdomain=at"
-                    style={{ textDecoration: "none", color: "black" }}
-                  ></a>
-                  <div className="text">
-                    <a
-                      href="https://www.linkedin.com/company/juhuu/?originalSubdomain=at"
-                      style={{ textDecoration: "none", color: "black" }}
-                    ></a>
                     <p>
                       <a
                         href="https://www.linkedin.com/company/juhuu/?originalSubdomain=at"
@@ -813,17 +848,6 @@ export default function Product_overview_page(){
                         className="fa-brands fa-instagram fa-3x"
                         style={{ marginBottom: 10 }}
                       />
-                    </a>
-                  </div>
-                  <a
-                    href="https://www.instagram.com/juhuu.app/"
-                    style={{ textDecoration: "none", color: "black" }}
-                  ></a>
-                  <div className="text">
-                    <a
-                      href="https://www.instagram.com/juhuu.app/"
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
                       <p>@juhuu_app</p>
                     </a>
                   </div>
@@ -833,9 +857,9 @@ export default function Product_overview_page(){
             <div className="row no-gutters">
               <div className="col-md-7">
                 <div className="contact-wrap w-100 p-md-5 p-4">
-                  <h4 className="mb-4" id="get-in-touch-sec3-h1">
+                  <h3 className="mb-4" id="get-in-touch-sec3-h1">
                     Contact Us
-                  </h4>
+                  </h3>
                   <div id="form-message-warning" className="mb-4" />
                   <div id="form-message-success" className="mb-4">
                     <p id="get-in-touch-sec3-p">
@@ -885,7 +909,7 @@ export default function Product_overview_page(){
                           <label
                             className="label"
                             htmlFor="email"
-                            id="get-in-touch-sec3-h1_h4"
+                            id="get-in-touch-sec3-h1_h3"
                           >
                             E-mail
                           </label>
@@ -1003,90 +1027,16 @@ export default function Product_overview_page(){
       </div>
     </div>
   </section>
-  {/* <footer class="footer">
-  <div class="container">
-      <h6>Starten wir gemeinsam in eine mobile Zukunft? Sprechen Sie uns an!</h6>
-      <div class="row my-5">
-          <div class="col-4">
-              <h5 class="nav-title">For joint projects:</h5>
-              <ul class="nav flex-column">
-                  <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-telephone"></i> +49 (0)7831
-                          788-0</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-envelope"></i>
-                          info(at)kienzler.com</a></li>
-              </ul>
-          </div>
-
-          <div class="col-4">
-              <h5 class="nav-title">For shared career goals:</h5>
-              <ul class="nav flex-column">
-                  <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-chevron-right"></i> Our job
-                          advertisements</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-chevron-right"></i>
-                          personal(at)kienzler.com</a></li>
-              </ul>
-          </div>
-
-          <div class="col-4">
-              <div class="d-flex media-flex">
-                  <div class="media-img me-3">
-                      <img src="https://www.kienzler.com/typo3conf/ext/kienzler/Resources/Public/img/icon_siegel.png"
-                          alt="" />
-                  </div>
-                  <div class="media-content">
-                      <h5>Quality from the Black Forest</h5>
-                      <p>Our products are produced in the Kinzigtal in the Black Forest.</p>
-                  </div>
-              </div>
-
-          </div>
-      </div>
-  </div>
-  <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-          <ul class="nav mini-nav">
-              <li class="nav-item">
-                  <a class="nav-link" href="#">imprint</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">data protection</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-              </li>
-          </ul>
-          <ul class="nav social-nav">
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-twitter-x"></i></a>
-              </li>
-          </ul>
-      </div>
-  </div>
-
-    </footer> */}
   <div className="containerfooter container-fluid p-0">
     <div className="container-fluid p-0 ">
-      {/* Footer */}
       <footer
         className="text-center text-lg-start text-black"
         style={{ backgroundColor: "#f3e8fa" }}
       >
         <section className="container">
           <div className="container text-center text-md-start mt-0 pt-5">
-            {/* Grid row */}
             <div className="row mt-5">
-              {/* Grid column */}
               <div className="col-md-4 col-lg-2 col-xl-2 mx-auto mb-1">
-                {/* Content */}
                 <div className="logo2 text-left">
                   <a href="./index.html">
                     <img
@@ -1132,10 +1082,7 @@ export default function Product_overview_page(){
                   </a>
                 </div>
               </div>
-              {/* Grid column */}
-              {/* Grid column */}
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-1">
-                {/* Links */}
                 <h2
                   className="text-uppercase fw-bold"
                   style={{ fontSize: 15 }}
@@ -1173,10 +1120,7 @@ export default function Product_overview_page(){
                   <p>Wien Austria</p>
                 </a>
               </div>
-              {/* Grid column */}
-              {/* Grid column */}
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-2">
-                {/* Links */}
                 <h2
                   className="text-uppercase fw-bold"
                   style={{ fontSize: 15 }}
@@ -1261,7 +1205,6 @@ export default function Product_overview_page(){
                   </a>
                 </p>
               </div>
-              {/* Grid column for Partner von section */}
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
                 <h2
                   className="text-uppercase fw-bold footerheading"
@@ -1312,6 +1255,7 @@ export default function Product_overview_page(){
 
 
 
-</>
+
+
     );
 }
